@@ -19,7 +19,7 @@ X_train, X_test, y_train, y_test = get_data_split(df, y)
 cnn = CondensedNearestNeighbor()
 
 
-def run_benchmark(cnn) -> tuple([pd.DataFrame, pd.Series]):
+def run_benchmark() -> tuple([pd.DataFrame, pd.Series]):
     knn = KNeighborsClassifier(n_neighbors=1, n_jobs=-1)
     X_reduced, y_reduced = benchmark_knn_cnn(
         knn, cnn, X_train, X_test, y_train, y_test
@@ -65,7 +65,7 @@ def plot_results(X_reduced, y_reduced):
     fig = plt.gcf()
     plt.show()
     plt.draw()
-    fig.savefig("output/output.png")
+    fig.savefig("output/output.png", bbox_inches='tight')
 
 
 def main():
