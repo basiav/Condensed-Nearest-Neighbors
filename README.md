@@ -9,13 +9,17 @@ The implementation and the subsets' terminology is based on: **Hart, Peter. "The
 It serves essentially as a **training set reduction** algorithm.
 
 
-Tested on the ["Codon usage"] bioinformatics dataset, presented in article [Open Access version link](https://www.nature.com/articles/s41598-023-28965-7).
+Tested on the ["Codon usage"](https://archive.ics.uci.edu/dataset/577/codon+usage) bioinformatics dataset, presented in article [Open Access version link](https://www.nature.com/articles/s41598-023-28965-7).
 
 
 ## Results
 
-- Sampleset reduction in function of CNN steps
+- Sampleset reduction in function of CNN iterations:
 <img src="https://github.com/basiav/Condensed-Nearest-Neighbors/blob/main/output/output.png"/>
+
+As can be seen above, the program took 4 iterations (0+3) to converge appropriately and almost the whole consistent subset was built in the first algorithm round.
+The sampleset reduction was indeed very high, reaching 87.55%.
+
 
 
 - Statistics:
