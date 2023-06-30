@@ -51,6 +51,7 @@ Samples before: 10406, samples after: 1296
 Process finished with exit code 0
 ```
 
+- Efficiency:
 The CNN turned out to be slighly less effective than the KNN trained on the whole dataset:
 
 |      CNN       |      KNN      |
